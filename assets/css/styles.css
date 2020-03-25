@@ -1,22 +1,99 @@
 body {
-    background: #1D2B64;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-size: 24px;
+    font-family: 'Baloo 2', Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
 h1 {
     text-transform: uppercase;
+    font-size: 30px;
+    background: blueviolet;
+    margin: 0;
+    color: #fff;
+    padding: 10px 15px;
 }
 
-#container {
-    background: #f7f7f7;
-    width: 360px;
-    margin: 0 auto;
-    border: 2px solid gray;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+i.fa-trash {
+    color: #fff;
 }
 
+i.fa-plus {
+    float: right;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    /* padding: 15px; */
+    font-size: 16px;
+}
+
+/* Layout Styling */
+input {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #ddd;
+    font-size: 22px;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    border: 2px solid blueviolet;
+    font-size: 20px;
+}
+
+li {
+    display: flex;
+    line-height: 40px;
+}
+
+li:nth-of-type(even) {
+    background: #ddd;
+}
+
+li .trash {
+    width: 40px;
+    height: 40px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    margin-right: 10px;
+}
+
+li .item-name {
+    padding-left: 15px;
+}
+
+li:hover .trash {
+    display: flex;
+}
+
+
+/* Utilities */
 .completed {
     color: gray;
     text-decoration: line-through;
+}
+
+.container {
+    width: 360px;
+    margin: 50px auto;
+    border-radius: 3px;
+    border: 1px solid #999;
+    background: #f3f3f3;
+    box-shadow: 1px 1p 1px rgba(0,0,0,0.2);
 }
