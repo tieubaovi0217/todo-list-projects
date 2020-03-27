@@ -10,11 +10,11 @@ background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, F
 
 h1 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 36px;
     background: blueviolet;
     margin: 0;
     color: #fff;
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 
 i.fa-trash {
@@ -24,6 +24,7 @@ i.fa-trash {
 i.fa-plus {
     float: right;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 ul {
